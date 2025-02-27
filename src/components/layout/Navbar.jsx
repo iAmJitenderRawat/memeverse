@@ -1,10 +1,7 @@
 import { Link } from 'react-router';
-import { useTheme } from '../../context/ThemeContext';
-import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
-  const { darkMode, toggleDarkMode } = useTheme();
-
   return (
     <nav
       className={"bg-[rbga(250, 250, 250,0.3)] dark:bg-[rbga(140, 139, 136,0.3)] shadow-lg sticky top-0 z-10 backdrop-blur-[15px] px-4"}
@@ -12,8 +9,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
+          <img src={logo} alt="Famous-Meme" className="h-12 w-auto" />
             <span className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-              MemeVerse
+              Famous Meme
             </span>
           </Link>
 
