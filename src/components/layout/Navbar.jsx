@@ -7,9 +7,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        darkMode === "dark" ? "bg-white" : "bg-gray-800"
-      } shadow-lg sticky top-0 z-10 backdrop-blur-[15px]`}
+      className={"bg-[rbga(250, 250, 250,0.3)] dark:bg-[rbga(140, 139, 136,0.3)] shadow-lg sticky top-0 z-10 backdrop-blur-[15px] px-4"}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
@@ -19,7 +17,7 @@ const Navbar = () => {
             </span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8 text-white">
+          <div className="hidden md:flex items-center space-x-8 text-white gap-4">
             <Link to="/explore" className="nav-link hover:text-yellow-500">
               Explore
             </Link>
